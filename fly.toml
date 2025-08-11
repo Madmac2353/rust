@@ -1,0 +1,13 @@
+app = "rust"  # Change this!
+kill_signal = "SIGINT"
+kill_timeout = 5
+
+[env]
+  PORT = "24115"
+
+[[services]]
+  internal_port = 24115
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 24115
